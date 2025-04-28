@@ -42,7 +42,7 @@ export class Circle implements Figure {
     readonly color: Color,
     readonly radius: number,
   ) {
-    if (radius < 0) {
+    if (radius < 1) {
       throw new Error('Bad input data!');
     }
   }
